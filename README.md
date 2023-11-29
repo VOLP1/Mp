@@ -1,2 +1,2 @@
 # Mp
-Jogo da velha em c++
+Application for searching and anouncing products based on location 
