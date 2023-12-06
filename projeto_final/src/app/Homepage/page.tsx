@@ -16,7 +16,7 @@ function Homepage() {
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Shop</a>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Categorias</a>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Sobre</a>
-                            <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Login</a>
+                            <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Login">Login</a>
                         </div>
                     </nav>
                     <div className="relative mt-6 max-w-lg mx-auto">
