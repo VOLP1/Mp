@@ -1,6 +1,10 @@
+import Footer from "../components/Footer";
+import Header from "../components/Header";
+
 export default function LogIn () {
      return( 
         <main className="bg-green-500">
+            <Header></Header>
             <div className="flex justify-center items-center min-w-screen h-screen">
                 <div className=" bg-green-200    shadow-xl w-1/3 h-2/3 mb-16 mt-20 flex flex-col rounded-2xl border-0.1 border-black ">
                     <div className="mb-16">
@@ -23,7 +27,7 @@ export default function LogIn () {
                     </form>
                 </div>
             </div>
-            
+            <Footer></Footer>
             
             
         </main>
