@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const User = require('./User'); 
+const Produto = require('./Produto'); 
 
 async function main() {
     await mongoose.connect("mongodb://localhost:27017");

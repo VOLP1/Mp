@@ -1,3 +1,4 @@
+import { userAgent } from "next/server";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 

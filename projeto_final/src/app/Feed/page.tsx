@@ -1,6 +1,13 @@
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 function Feed(){
     return(
-        <div></div>
+        <main>
+            <Navbar></Navbar>
+            <Footer></Footer>
+        </main>
+
     )
 
 }

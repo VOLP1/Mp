@@ -4,9 +4,10 @@ const addressSchema = new mongoose.Schema({
     Longetude: Number,
     Latitude: Number,
 });
+//MODEL DE PRODUTO
 
 const userSchema = new mongoose.Schema({
-  title: String,
+  name: String,
   description: String,
   image: String,
   price: Number,
@@ -18,4 +19,4 @@ const userSchema = new mongoose.Schema({
   carrinho: addressSchema,
 }); 
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Produto', userSchema);
