@@ -25,7 +25,7 @@ function Perfil(){
                             <div className="p-5 h-fit w-fit">
                                 <p className="pb-4 text-red-950 ">Descrição</p>
                                 <div className=" bg-white rounded-lg border-2 border-black w-full h-fit">
-                                    <p className="p-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, libero. Accusantium incidunt numquam, quos sunt alias pariatur autem! Voluptatum beatae voluptatibus sint vitae accusantium dolorem impedit ex doloribus tempore quod.</p>
+                                    <p className="p-2 text-black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, veritatis? Fuga quibusdam sunt nam culpa reprehenderit eos iste quisquam, voluptas architecto excepturi hic reiciendis ipsam quasi quos quis voluptatum labore? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, libero. Accusantium incidunt numquam, quos sunt alias pariatur autem! Voluptatum beatae voluptatibus sint vitae accusantium dolorem impedit ex doloribus tempore quod.</p>
                                 </div>
                             </div>  
                         </div>    

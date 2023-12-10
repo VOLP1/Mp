@@ -9,7 +9,7 @@ function NavbarLog(){
                             </svg>
                         </div>
                         <div className="w-full text-gray-700 md:text-center text-2xl font-semibold">
-                            Brand
+                            FEIRA FINDER
                         </div>
                         <div className="flex items-center justify-end w-full">
                             <a href="/Carrinho">
@@ -19,17 +19,10 @@ function NavbarLog(){
                                     </svg>
                                 </button>
                                 </a>
-                            <div className="flex sm:hidden">
-                                <button type="button" className="text-gray-600 hover:text-gray-500 focus:outline-none focus:text-gray-500" aria-label="toggle menu">
-                                    <svg viewBox="0 0 24 24" className="h-6 w-6 fill-current">
-                                        <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                                    </svg>
-                                </button>
-                            </div>
                         </div>
                     </div>   
                     <nav className="sm:flex sm:justify-center sm:items-center mt-4">
-                        <div className="flex flex-col sm:flex-row">
+                        <div className="flex flex-col  sm:flex-row">
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Homepage">Home</a>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Shop</a>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Login">Log off</a>
