@@ -5,6 +5,7 @@ function Feed(){
     return(
         <main>
             <Navbar></Navbar>
+            
             <Footer></Footer>
         </main>
 
