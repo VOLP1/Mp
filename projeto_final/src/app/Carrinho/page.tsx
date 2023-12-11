@@ -33,12 +33,11 @@ function Carrinho(){
                         </div>
                     </div>
                     <div className="bg-green-200 h-3/5 w-2/5 self-start ml-6 flex flex-row justify-between items-center ">
-                        <h1 className="text-2xl font-bold text-gray-800">Pagamento</h1>
+                        <h1 className="text-2xl font-bold text-gray-800">Preço Total</h1>
                         <h3 className="text-gray-800 font-semibold text-lg  ">R$ 7,99</h3>
-                        
-                            <button type = "submit" className="bg-green-400 border-2  border-black w-1/2 h-12  ">
-                                <p className=" text-2xl text-black ">Compre agora</p>
-                            </button>
+                        <button type = "submit" className="bg-green-400 border-2  border-black w-1/2 h-12  ">
+                            <a href="/Pagamento" className="text-2xl text-black">Compre agora</a>
+                        </button>
 
                     </div>
                     

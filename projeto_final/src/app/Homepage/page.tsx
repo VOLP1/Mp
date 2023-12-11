@@ -1,10 +1,15 @@
+"use client";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { useSession } from "next-auth/react";
+import NavbarLog from "../components/Navbar_Logged";
 
 function Homepage() {
+
+    const { data: session } = useSession();
     return (
         <div className="bg-green-500">
-            <Navbar></Navbar>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className="bg-green-200 h-screen  mt-8  sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto ">
                 <div className="flex items-center justify-evenly sm:grid-cols-2 my-6">
                     <img className ='h-96 w-96 mt-20' src="/img.jpg" alt="logo" />

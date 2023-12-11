@@ -1,3 +1,5 @@
+import LoginButton from "./Login_Button";
+
 function NavbarLog(){
     return(
         <header className="bg-green-500">
@@ -25,7 +27,7 @@ function NavbarLog(){
                         <div className="flex flex-col  sm:flex-row">
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Homepage">Home</a>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="#">Shop</a>
-                            <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Login">Log off</a>
+                            <LoginButton></LoginButton>
                             <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Perfil">Perfil</a>
                         </div>
                     </nav>
