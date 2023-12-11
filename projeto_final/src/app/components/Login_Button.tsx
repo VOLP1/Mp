@@ -14,7 +14,7 @@ const LoginButton = () => {
     );
   }
   return (
-    <button onClick={() => signIn()} className="text-gray-600">
+    <button onClick={() => signIn('google')} className="text-gray-600">
       Login
     </button>
   );
