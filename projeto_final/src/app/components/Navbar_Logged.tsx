@@ -11,7 +11,7 @@ function NavbarLog(){
                             </svg>
                         </div>
                         <div className="w-full text-gray-700 md:text-center text-2xl font-semibold">
-                            FEIRA FINDER
+                            <a className="mt-3 text-gray-600 hover:underline sm:mx-3 sm:mt-0" href="/Homepage">Feira Finder</a>
                         </div>
                         <div className="flex items-center justify-end w-full">
                             <a href="/Carrinho">
