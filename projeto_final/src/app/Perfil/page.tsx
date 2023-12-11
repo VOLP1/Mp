@@ -1,10 +1,14 @@
+"use client";
 import NavbarLog from "../components/Navbar_Logged";
 import Footer from "../components/Footer";
+import { useSession } from "next-auth/react";
+import Navbar from "../components/Navbar";
 
 function Perfil(){
+    const { data: session } = useSession();
     return(
         <body>
-            <NavbarLog></NavbarLog>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className = "bg-green-200 flex  justify-around">
                 <div className="bg-green-300 w-4/5 min-h-screen border-r-2 border-l-2 border-black">
                     {/* Foto e capa */}

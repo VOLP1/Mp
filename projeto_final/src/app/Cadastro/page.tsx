@@ -1,10 +1,14 @@
+"use client";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { useSession } from "next-auth/react";
+import NavbarLog from "../components/Navbar_Logged";
+import Navbar from "../components/Navbar";
 
 function Cadastro(){
+    const { data: session } = useSession();
     return(
         <main>
-            <Header></Header>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className="bg-green-500 min-w-screen h-screen flex justify-center items-center">
             
                 <div className=" w-1/2 h-2/3 bg-green-200  rounded-2xl  justify-center  border-0.1 border-black shadow-xl">

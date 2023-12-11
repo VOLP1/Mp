@@ -1,13 +1,15 @@
-import { userAgent } from "next/server";
+"use client";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { useSession } from "next-auth/react";
+import NavbarLog from "../components/Navbar_Logged";
+import Navbar from "../components/Navbar";
 
 export default function LogIn () {
 
-
+    const { data: session } = useSession();
      return( 
         <main className="bg-green-500">
-            <Header></Header>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className="flex justify-center items-center min-w-screen h-screen">
                 <div className=" bg-green-200    shadow-xl w-1/3 h-2/3 mb-16 mt-20 flex flex-col rounded-2xl border-0.1 border-black ">
                     <div className="mb-16">

@@ -1,10 +1,14 @@
+"use client";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
+import { useSession } from "next-auth/react";
+import NavbarLog from "../components/Navbar_Logged";
+import Navbar from "../components/Navbar";
 
 function Produto(){
+    const { data: session } = useSession();
     return(
         <main>
-            <Header></Header>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className="bg-green-200 py-8">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-col md:flex-row -mx-4">

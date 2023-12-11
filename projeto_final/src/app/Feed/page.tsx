@@ -1,11 +1,15 @@
+"use client";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { useSession } from "next-auth/react";
+import NavbarLog from "../components/Navbar_Logged";
 
 function Feed() {
+  const { data: session } = useSession();
   return (
     <main>
-      <Navbar />
-      <section className="bg-green-200 py-8">
+      {session? <NavbarLog/>: <Navbar/>}
+      <section className="bg-green-200 py-8 h-screen">
         <div className="container mx-auto">
           <h1 className="text-3xl font-bold text-center mb-8">Produtos à Venda</h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">

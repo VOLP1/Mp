@@ -1,10 +1,14 @@
+"use client";
 import Footer from "../components/Footer";
 import NavbarLog from "../components/Navbar_Logged";
+import { useSession } from "next-auth/react";
+import Navbar from "../components/Navbar";
 
 function Pagamento(){
+    const { data: session } = useSession();
     return(
         <main className="bg-green-200">
-            <NavbarLog></NavbarLog>
+            {session? <NavbarLog/>: <Navbar/>}
             <div className="bg-green-200 h-full  mt-8  sm:mt-14 sm:mb-14 px-6 sm:px-8 lg:px-16 mx-auto ">
                 <div className="flex items-center justify-evenly sm:grid-cols-2 my-6">
                     <div className="bg-green-200 h-1/2 w-3/5   shadow-xl">
