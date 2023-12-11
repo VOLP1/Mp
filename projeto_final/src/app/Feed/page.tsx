@@ -19,7 +19,11 @@ function Feed() {
               <h2 className="text-xl font-bold mb-2">Nome do Produto 1</h2>
               <p className="text-gray-700 mb-4">Lorem ipsum dolor sit amet...</p>
               <p className="text-green-700 font-bold mb-4">Preço: R$ 99,99</p>
-              <a href="/Carrinho" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Adicionar ao Carrinho</a>
+              {
+                session? <a href="/Carrinho" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Adicionar ao Carrinho</a>:
+                <a href="Login" className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mt-4">Adicionar ao Carrinho</a>
+              }
+              
               
             </div>
             {/* Produto 2 - Copie a estrutura do Produto 1 e adicione informações para o segundo produto */}
